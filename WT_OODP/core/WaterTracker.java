@@ -1,15 +1,15 @@
-package OODP.core;
+package WT_OODP.core;
 
-import OODP.exception.DataFileException;
-import OODP.exception.InvalidAmountException;
-import OODP.exception.InvalidCategoryException;
-import OODP.io.CsvFileManager;
-import OODP.model.WaterUsage;
-import OODP.report.DailyReport;
-import OODP.report.FullReport;
-import OODP.report.Report;
-import OODP.repository.WaterUsageRepository;
-import OODP.util.ConsoleHelper;
+import WT_OODP.exception.DataFileException;
+import WT_OODP.exception.InvalidAmountException;
+import WT_OODP.exception.InvalidCategoryException;
+import WT_OODP.io.CsvFileManager;
+import WT_OODP.model.WaterUsage;
+import WT_OODP.report.DailyReport;
+import WT_OODP.report.FullReport;
+import WT_OODP.report.Report;
+import WT_OODP.repository.WaterUsageRepository;
+import WT_OODP.util.ConsoleHelper;
 
 import java.time.LocalDate;
 import java.util.Scanner;

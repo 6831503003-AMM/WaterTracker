@@ -1,4 +1,4 @@
-package OODP.exception;
+package WT_OODP.exception;
 
 /**
  * Thrown when a category index or name is not recognised.

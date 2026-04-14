@@ -11,7 +11,7 @@ WaterTracker/
 ├── README.md
 ├── compile.sh          ← compile all sources
 ├── run.sh              ← compile + run
-└── OODP/
+└── WT_OODP/
     ├── Main.java                          ← entry point
     │
     ├── model/
@@ -70,14 +70,14 @@ chmod +x compile.sh run.sh
 ```bash
 # from the WaterTracker/ directory
 mkdir -p out
-find OODP -name "*.java" | xargs javac -d out
-java -cp out OODP.Main
+find WT_OODP -name "*.java" | xargs javac -d out
+java -cp out WT_OODP.Main
 ```
 
 ### Option C — IDE (IntelliJ / Eclipse / VS Code)
 1. Open the `WaterTracker/` folder as the project root.
-2. Mark `WaterTracker/` as the sources root (so `OODP` is a top-level package).
-3. Run `OODP.Main`.
+2. Mark `WaterTracker/` as the sources root (so `WT_OODP` is a top-level package).
+3. Run `WT_OODP.Main`.
 
 ---
 

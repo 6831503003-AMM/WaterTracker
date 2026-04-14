@@ -1,8 +1,8 @@
-package OODP.report;
+package WT_OODP.report;
 
-import OODP.model.WaterUsage;
-import OODP.repository.WaterUsageRepository;
-import OODP.util.ConsoleHelper;
+import WT_OODP.model.WaterUsage;
+import WT_OODP.repository.WaterUsageRepository;
+import WT_OODP.util.ConsoleHelper;
 
 import java.time.LocalDate;
 import java.util.LinkedHashMap;

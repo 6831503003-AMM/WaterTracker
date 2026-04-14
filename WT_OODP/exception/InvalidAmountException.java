@@ -1,4 +1,4 @@
-package OODP.exception;
+package WT_OODP.exception;
 
 /**
  * Thrown when a water usage amount is invalid (e.g. zero or negative).

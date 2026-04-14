@@ -1,4 +1,4 @@
-package OODP.report;
+package WT_OODP.report;
 
 /**
  * Abstraction for any printable report.

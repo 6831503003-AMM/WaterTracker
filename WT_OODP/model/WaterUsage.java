@@ -1,4 +1,4 @@
-package OODP.model;
+package WT_OODP.model;
 
 import java.time.LocalDate;
 

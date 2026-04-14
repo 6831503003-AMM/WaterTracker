@@ -1,6 +1,6 @@
-package OODP.repository;
+package WT_OODP.repository;
 
-import OODP.model.WaterUsage;
+import WT_OODP.model.WaterUsage;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

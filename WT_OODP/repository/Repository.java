@@ -1,4 +1,4 @@
-package OODP.repository;
+package WT_OODP.repository;
 
 import java.util.List;
 

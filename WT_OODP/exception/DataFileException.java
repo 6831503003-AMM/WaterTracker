@@ -1,4 +1,4 @@
-package OODP.exception;
+package WT_OODP.exception;
 
 /**
  * Thrown when a file read or write operation fails in the data layer.
