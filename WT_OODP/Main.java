@@ -6,7 +6,6 @@ import java.util.Scanner;
 
 /**
  * Application entry point.
- * Keyboard input (2.4) is handled via {@link Scanner}.
  */
 public class Main {
     public static void main(String[] args) {
