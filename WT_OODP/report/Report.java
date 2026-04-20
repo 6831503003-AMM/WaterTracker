@@ -1,9 +1,7 @@
 package WT_OODP.report;
 
 /**
- * Abstraction for any printable report.
- * Satisfies the Inheritance / Interface requirement (2.2).
- *
+
  * Every concrete report must provide a title and a {@code display()} method
  * that writes its content to standard output.
  */

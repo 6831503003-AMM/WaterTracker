@@ -16,30 +16,24 @@ import java.util.Scanner;
 
 /**
  * Application controller.
- *
  * Wires together the repository, file manager and reports; handles all
  * keyboard input and orchestrates user-facing operations.
- *
- * Criteria covered here:
- *   2.3 – Exception / Custom Exception (try-catch on custom exceptions)
- *   2.4 – Input &amp; Output from keyboard (Scanner)
  */
 public class WaterTracker {
 
-    // ── Constants ─────────────────────────────────────────────────────────────
+    // Constants
     public static final String[] CATEGORIES =
             {"shower", "kitchen", "laundry", "garden", "other"};
     private static final double DEFAULT_LIMIT = 150.0;
 
-    // ── Dependencies ──────────────────────────────────────────────────────────
+    // ── Dependencies
     private final WaterUsageRepository repository = new WaterUsageRepository();
     private final CsvFileManager       fileManager = new CsvFileManager();
 
     private double dailyLimit = DEFAULT_LIMIT;
 
-    // ─────────────────────────────────────────────────────────────────────────
+
     //  1. ADD WATER USAGE
-    // ─────────────────────────────────────────────────────────────────────────
     public void addWaterUsage(Scanner scanner) {
         System.out.println("\n💧 ADD WATER USAGE");
         System.out.println("──────────────────");
@@ -49,7 +43,7 @@ public class WaterTracker {
         while (amount <= 0) {
             System.out.print("Enter amount used (liters): ");
             try {
-                double input = Double.parseDouble(scanner.nextLine().trim());
+                double input = Double.parseDouble(scanner.nextLine().trim()); // removing whitespace from both ends of a string.
                 if (input <= 0) throw new InvalidAmountException(input);
                 amount = input;
             } catch (InvalidAmountException e) {
@@ -141,7 +135,6 @@ public class WaterTracker {
     //  3. VIEW FULL REPORT
     // ─────────────────────────────────────────────────────────────────────────
     public void viewReport() {
-        // Using Report interface polymorphically (2.2)
         Report report = new FullReport(repository, dailyLimit, CATEGORIES);
         report.display();
     }

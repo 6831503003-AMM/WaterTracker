@@ -3,8 +3,7 @@ package WT_OODP.repository;
 import java.util.List;
 
 /**
- * Generic repository contract – satisfies the Parametric Polymorphism
- * requirement (2.6).  Any entity type {@code T} can be stored, retrieved
+ * Any entity type {@code T} can be stored, retrieved
  * and managed through this interface.
  *
  * @param <T> the type of entity managed by this repository

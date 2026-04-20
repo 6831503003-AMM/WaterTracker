@@ -2,7 +2,6 @@ package WT_OODP.util;
 
 /**
  * Stateless helper methods shared by the tracker and reports.
- * Keeps presentation logic in one place so it can evolve independently.
  */
 public final class ConsoleHelper {
 

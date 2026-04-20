@@ -11,11 +11,9 @@ import java.util.stream.Collectors;
 
 /**
  * Concrete implementation of {@link Repository} for {@link WaterUsage} records.
- * Demonstrates Collection with Generics (2.5) and Parametric Polymorphism (2.6).
  */
 public class WaterUsageRepository implements Repository<WaterUsage> {
 
-    // Collection with Generics (2.5)
     private final List<WaterUsage> store = new ArrayList<>();
 
     // ── Repository<WaterUsage> contract ──────────────────────────────────────

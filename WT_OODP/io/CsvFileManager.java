@@ -15,8 +15,6 @@ import java.util.List;
  *   <li>Usage records  → {@code water_data.csv}</li>
  *   <li>Configuration  → {@code water_config.txt}</li>
  * </ul>
- *
- * Satisfies Read/Write from File (2.1) and Exception / Custom Exception (2.3).
  */
 public class CsvFileManager {
 
